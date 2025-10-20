@@ -1,0 +1,25 @@
+{
+  "profiles": {
+    "GitAutoPush": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "REPO_PATH": "C:\\Users\\felipe\\Test",
+        "AUTHOR_NAME": "Filippo Bozzi",
+        "AUTHOR_EMAIL": "felipeleon73@users.noreply.github.com",
+        "CHECK_INTERVAL_MINUTES": "15",
+        "INACTIVITY_THRESHOLD_MINUTES": "40"
+      }
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "environmentVariables": {
+        "REPO_PATH": "/repo",
+        "AUTHOR_NAME": "Filippo Bozzi",
+        "AUTHOR_EMAIL": "felipeleon73@users.noreply.github.com",
+        "CHECK_INTERVAL_MINUTES": "15",
+        "INACTIVITY_THRESHOLD_MINUTES": "40"
+      },
+      "containerRunArguments": "-v \"C:\\Users\\felipe\\Test\":/repo -v \"C:\\Users\\felipe\\.ssh\":/app/.ssh --user 1000:1000"
+    }
+  }
+}

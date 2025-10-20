@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".github/workflows/build-and-push.yml" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="GitAutoPush/GitAutoPush.csproj" />
+</Solution>
